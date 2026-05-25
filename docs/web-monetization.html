@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web Monetization — eltociear</title>
+  <meta name="description" content="Web Monetization landing for skill-audit-mcp + secrets-audit-mcp. Interledger Open Payments stream micropayments while viewers read the docs.">
+  <link rel="canonical" href="https://eltociear.github.io/homebrew-tap/web-monetization.html">
+
+  <!--
+    Interledger Open Payments wallet address.
+    NOTE: until the production Chimoney wallet is provisioned (browser
+    one-time at https://chimoney.io/dashboard/wallets), this is the
+    Interledger Rafiki test wallet that the WM browser ext accepts.
+    Swap to the production address when ready; tag this commit.
+  -->
+  <link rel="monetization" href="https://ilp.interledger-test.dev/eltociear">
+
+  <meta name="theme-color" content="#1f6feb">
+  <style>
+    body { font: 16px/1.5 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #1f2328; }
+    h1 { font-size: 1.75rem; }
+    code { background: #f6f8fa; padding: 1px 5px; border-radius: 4px; }
+    a { color: #0969da; }
+    .card { border: 1px solid #d0d7de; border-radius: 8px; padding: 1rem 1.25rem; margin: 1.25rem 0; }
+    .badge { display: inline-block; background: #2da44e; color: #fff; padding: 2px 8px; border-radius: 999px; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <h1>Web Monetization <span class="badge">streaming</span></h1>
+
+  <p>This page is Web-Monetized. If you have the
+  <a href="https://webmonetization.org/">Web Monetization browser extension</a>
+  installed, a tiny Interledger micropayment stream flows from you to the
+  wallet pinned in the <code>&lt;link rel="monetization"&gt;</code> tag in the
+  <code>&lt;head&gt;</code>.</p>
+
+  <div class="card">
+    <h2>Supported wallet providers (2026)</h2>
+    <ul>
+      <li><a href="https://chimoney.io/wallets/">Chimoney</a> — global, easiest</li>
+      <li><a href="https://fynbos.app/">Fynbos</a> — Canada only</li>
+      <li><a href="https://gatehub.net/">GateHub</a> — EU</li>
+      <li><a href="https://wallet.interledger-test.dev/">Interledger Test Wallet</a> — used by this page until production wallet is provisioned</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>What the money goes toward</h2>
+    <ul>
+      <li><a href="https://github.com/eltociear/skill-audit-mcp">skill-audit-mcp</a> — MCP supply-chain auditor</li>
+      <li><a href="https://github.com/eltociear/secrets-audit-mcp">secrets-audit-mcp</a> — 32-provider secret scanner</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Other ways to support</h2>
+    <ul>
+      <li><a href="https://polar.sh/eltociear">Polar.sh recurring tiers</a> — $5 / $20 / $50</li>
+      <li><a href="https://drips.network/app/projects/github/eltociear/skill-audit-mcp">Drips Network</a> — Ethereum continuous-rate funding</li>
+      <li><a href="https://github.com/sponsors/eltociear">GitHub Sponsors</a></li>
+      <li><a href="https://x402.bankr.bot/0x130c617c8f636cad965ed57ca2164ee4e39ac6dd/security-audit">Bankr x402 endpoint</a> — pay-per-scan on Base</li>
+    </ul>
+  </div>
+
+  <p><small>Want this page on your repo? Copy <a href="https://github.com/eltociear/homebrew-tap/blob/main/docs/web-monetization.html">the source</a> and replace the wallet href.</small></p>
+</body>
+</html>
